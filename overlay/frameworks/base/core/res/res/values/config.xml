@@ -180,4 +180,6 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <bool name="config_enableAdbByDefault">true</bool>
 </resources>

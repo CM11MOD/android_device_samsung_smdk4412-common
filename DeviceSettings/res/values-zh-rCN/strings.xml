@@ -44,4 +44,12 @@
     <string name="dockaudio_subcat_title">音频</string>
     <string name="use_dock_audio_title_head">使用基座的 USB 音频</string>
     <string name="use_dock_audio_summary_head">使用基座上的被动音频输出</string>
+
+    <!-- Touchwake -->
+    <string name="touchwake_title">Touchwake</string>
+    <string name="touchwake_enable_title">启用</string>
+    <string name="touchwake_enable_summary_off">Touchwake已禁用</string>
+    <string name="touchwake_enable_summary_on">Touchwake已启用</string>
+    <string name="touchwake_timeout_title">超时</string>
+    <string name="touchwake_timeout_summary">设置 touchwake 超时值</string>
 </resources>

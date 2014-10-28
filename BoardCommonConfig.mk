@@ -42,6 +42,11 @@ COMMON_GLOBAL_CFLAGS += -DEXYNOS4X12_ENHANCEMENTS
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 endif
 
+TARGET_GCC_VERSION_AND := 4.9-sm
+TARGET_GCC_VERSION_ARM := 4.8-sm
+TARGET_GCC_VERSION := 4.9-sm
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8-sm
+
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos4
 TARGET_SOC := exynos4x12
@@ -140,6 +145,8 @@ BOARD_BLUEDROID_VENDOR_CONF := device/samsung/smdk4412-common/bluetooth/vnd_smdk
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/s3c-usbgadget/gadget/lun%d/file"
 
 # Recovery
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_SETS_FSTAB := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/smdk4412-common/recovery/recovery_keys.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/smdk4412-common/recovery/graphics.c
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
